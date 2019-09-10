@@ -66,3 +66,23 @@ img {
   background: #f1f1f1;
   margin-bottom: 2rem;
 }
+
+.card h3 {
+  letter-spacing: 0.6rem;
+  text-transform: lowercase;
+  color: #edae2b;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  height: 400px;
+}
+
+/* card div specific styling */
+.card > div {
+  padding: 2rem;
+}
+
+.card:nth-child(even) img {
+  order: 999;
+}
