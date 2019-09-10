@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Animate on Scroll Example</title>
   </head>
   <body>
     <header class="main-header">
-      <h1><span>Acrylic Painting</span> Gallery</h1>
+      <h1><span>Lamonte David</span> Gallery</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nam
         laborum ipsa sint sed. Enim.
@@ -20,7 +22,7 @@
       <section class="card">
         <img src="img/paint_01.jpg" alt="" />
         <div>
-          <h3>Acrylic Painting <span>#1</span></h3>
+          <h3>Origin Story</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
             culpa illo ab in nesciunt, repudiandae quas alias similique, ipsa
@@ -33,10 +35,11 @@
         </div>
       </section>
 
-      <section class="card">
+      <!-- adding AOS classes to control the animate in -->
+      <section class="card" data-aos="fade-left" data-aos-duration="1500">
         <img src="img/paint_02.jpg" alt="" />
         <div>
-          <h3>Acrylic Painting <span>#2</span></h3>
+          <h3>A Taste of Things To Come</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
             culpa illo ab in nesciunt, repudiandae quas alias similique, ipsa
@@ -49,10 +52,10 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-right" data-aos-duration="2000">
         <img src="img/paint_03.jpg" alt="" />
         <div>
-          <h3>Acrylic Painting <span>#3</span></h3>
+          <h3>Marooned</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
             culpa illo ab in nesciunt, repudiandae quas alias similique, ipsa
@@ -65,10 +68,10 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-left" data-aos-duration="2500">
         <img src="img/paint_04.jpg" alt="" />
         <div>
-          <h3>Acrylic Painting <span>#4</span></h3>
+          <h3>Is There Life on Mars?</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
             culpa illo ab in nesciunt, repudiandae quas alias similique, ipsa
@@ -81,10 +84,10 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" data-aos="fade-right" data-aos-duration="3000">
         <img src="img/paint_05.jpg" alt="" />
         <div>
-          <h3>Acrylic Painting <span>#5</span></h3>
+          <h3>Until I See You Again</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
             culpa illo ab in nesciunt, repudiandae quas alias similique, ipsa
@@ -97,5 +100,12 @@
         </div>
       </section>
     </main>
+    <!-- AOS script init, you can add objects here to control things like duration and how long until the animations are triggered from the initial trigger point -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120
+      });
+    </script>
   </body>
 </html>
